@@ -126,3 +126,51 @@ section.show {
     box-shadow: 0 0 20px rgba(144, 238, 144, 0.4);
   }
   
+  .footer-link {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer-link:hover {
+    color: #ffc107; /* gold hover */
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+  }
+  
+  .social-icon {
+    font-size: 1.3rem;
+    transition: transform 0.3s, text-shadow 0.3s;
+  }
+  .social-icon:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 5px rgba(255, 215, 0, 0.5);
+  }
+  
+  .hero-section {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    padding: 100px 0 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-logo {
+    width: 180px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5)) drop-shadow(0 0 20px rgba(255, 105, 180, 0.4));
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    animation: pulseGlow 4s ease-in-out infinite;
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 30px rgba(255, 105, 180, 0.3);
+    }
+    50% {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.6), 0 0 50px rgba(255, 105, 180, 0.5);
+    }
+  }
+  
+  
